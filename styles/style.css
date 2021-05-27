@@ -166,7 +166,15 @@ margin-right: 91px;
 	height: 78px;
 	border-radius: 50%;
 	margin-right: 19px;
+	cursor: pointer;
+}
+.local:hover {
+	transition: all 0.3s;
+	opacity: .5;
 
+} 
+.show {
+	display: none;
 }
 .local__title {
 	font-size: 16px;
@@ -335,6 +343,11 @@ font-weight: 700;
 	background-color: #fe6250;
 	border-radius: 5px;	
 box-shadow: 0px 19px 49px 0px rgba(254, 88, 81, 0.1),0px 4px 0px 0px rgba(230, 60, 60, 0.004);	  
+cursor: pointer;
+}
+.bullet__under-btn:hover {
+	transition: all 0.3s;
+	opacity: .5;
 }
 
 .btn-title {
@@ -344,7 +357,7 @@ box-shadow: 0px 19px 49px 0px rgba(254, 88, 81, 0.1),0px 4px 0px 0px rgba(230, 6
 	font-size: 17px;
 	font-weight: 700;
 	background-color: transparent;
-	cursor: pointer;
+	
 }
 
 .btn-icon {
@@ -352,10 +365,7 @@ box-shadow: 0px 19px 49px 0px rgba(254, 88, 81, 0.1),0px 4px 0px 0px rgba(230, 6
 	margin-left: 6px;
 }
 
-.btn-title:hover {
-	transition: all 0.3s;
-	opacity: .5;
-}
+
 .slider {
 	display: flex;
     flex-direction: column;
@@ -381,9 +391,20 @@ svg {
 }
 
 .prev {
+	cursor: pointer;
 	left: -30px;
 }
 
 .next {
+	cursor: pointer;
 	right: -8px;
+}
+
+.prev:hover {
+	transition: all 0.3s;
+	opacity: .5;
+}
+.next:hover {
+	transition: all 0.3s;
+	opacity: .5;
 }
