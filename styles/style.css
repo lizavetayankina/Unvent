@@ -117,6 +117,8 @@ section {
 	padding-top: 46px;
 	padding-bottom: 127px;
 }
+
+/*Header*/
 .header {
 	width: 100%;
 	max-width: 1570px;
@@ -217,6 +219,9 @@ margin-right: 91px;
 	transition: all 0.3s;
 	opacity: .5;
 }
+
+/*nav-menu*/
+
 .header-header__nav {
 	width: 1570px;
 	display: flex;
@@ -238,6 +243,7 @@ margin-right: 91px;
 	transition: all 0.3s;
 	opacity: .5;
 }
+/*block */
 
 .block {
 	display: flex;
@@ -265,6 +271,7 @@ margin-right: 91px;
 	font-size: 60px;
 	font-family: var(--UniNeueBold);
 }
+
 .bullet {
 	display: flex;
     margin-bottom: 60px;
@@ -276,6 +283,15 @@ margin-right: 91px;
 
 .bullet__item {
 	font-size: 20px;
+	position: relative;
+}
+.bullet__item::before {
+	content: "";
+	border-top: 4px solid #fe6250;
+	width: 23px;
+	transform: rotate(150deg);
+	position: absolute;
+	left: -12px;
 }
 .number {
 	display: inline-block;
@@ -283,7 +299,6 @@ margin-right: 91px;
 	font-size: 72px;
 	font-weight: 800;
 	padding-right: 12px;
-	margin-left: 20px;
 }
 .bullet__item p {
   font-family: var(--UniNeueBook);
