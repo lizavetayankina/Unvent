@@ -173,6 +173,9 @@ margin-right: 91px;
 	opacity: .5;
 
 } 
+.map {
+	width: 100%;
+}
 .show {
 	display: none;
 }
@@ -380,7 +383,7 @@ cursor: pointer;
 	position: relative;
 
 }
-.slider__item img{
+.slider__img{
 	margin-right: 16px;
 }
 
