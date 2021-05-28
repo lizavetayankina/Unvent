@@ -588,7 +588,7 @@ svg {
 	opacity: .5;
 }
 
-@media (min-width:1200px) and (max-width:1366px) {
+@media (max-width:1366px) {
 	  
 html {
 	font-size: 10px;
@@ -597,49 +597,92 @@ body {
 	font-size: 16px;
 }
 	section {
-		width: 100%;
-		max-width: 136.6rem;
-		margin: auto;
+       margin: auto;
 	}
 	.header {
-		max-width: 120.0rem;
-		
+		width: 102rem;	
 	}
-	.header-header {
-		margin-bottom: 4.4rem;
+	.header-header__btn {
+		padding: 1rem 2rem;
+		text-align: center;
+		margin-right: 8rem;
+	}
+	
+.block {
+	width: 102rem;
+}
+}
+
+@media  (max-width:1200px) {
+	section {
+		margin: auto;
+	 }
+	 .header {
+		 width: 102.4rem;	
+	 }
+	 
+ .block {
+	width: 102.4rem;	
+ }
+}
+@media (max-width:1024px) {}
+	
+
+@media (max-width:769px) {
+	section {
+		margin: auto;
+	 }
+	 .header {
+		width: 102.4rem; 	
+	 }
+	 .header-header {
+		 flex-direction: column;
+		 margin: auto;
+		 width: 76.9rem;
+	 }
+	.header-header__logo {
+		margin: auto;
+		padding-bottom: 2rem;
 	}
 	.header-header__title {
-		width: 32.1rem;
-    font-family: var(--UniNeueBook);
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    text-align: start;
-    margin-right: 10.0rem;
-}
-  .header-header__local {
-	margin-right: 5.0rem;
-	width: 24.0rem;
-  }
-.header-header__btn {
-	padding: 1.2rem 3.1rem;
-	font-size: 1.6rem;
-	margin-right: 8.0rem;
-}
-
-
-
-
-}
-
-@media (min-width:1024px) and (max-width:1200px) {
-
-}
-@media (min-width:769px) and (max-width:1024px) {
-
-}
-@media (min-width:481px) and (max-width:769px) {
-
-}
-@media (min-width:320px) and (max-width:481px) {
-
+		margin: auto;
+		text-align: center;
+		padding-bottom: 2rem;
+	} 
+	.header-header__local {
+		margin: auto;
+		padding-bottom: 2rem;
+	} 
+	.header-header__btn {
+		margin: auto;
+		margin-bottom: 2rem;
+	} 
+	.header-header__nav {
+		flex-direction: column;
+	}
+	.header-header__contacts {
+		margin-bottom: 2rem;
+	}
+ .block {
+	width: 76.9rem;
+ }
+ .block-block__title {
+	 width: 50rem;
+ }
+ .bullet {
+	flex-direction: column;
+    align-items: center;
+ }
+ .bullet__item {
+	 margin-bottom: 2rem;
+ }
+ .bullet__under {
+	 flex-direction: column;
+ }
+ .bullet__under-title {
+	 margin: auto;
+ }
+ .slider {
+	 margin: auto;
+ }
 }
