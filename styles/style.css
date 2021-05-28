@@ -172,12 +172,21 @@ margin-right: 100px;
 	border-radius: 50%;
 	margin-right: 19px;
 	cursor: pointer;
+	position: relative;
 }
 .local:hover {
 	transition: all 0.3s;
 	opacity: .5;
-
 } 
+
+.local::after {
+	content: "\f3c5";
+	font-family: 'FontAwesome';
+	color: #fd524f;
+	position: absolute;
+	top: 33%;
+	right: 50%;
+}
 .map {
 	width: 100%;
 }
@@ -255,26 +264,51 @@ margin-right: 100px;
     flex-direction: column;
 	font-family: var(--UniNeueHeavy);
 	font-weight: 800;
+	vertical-align: top;
 }
 .header-header__contacts p{
 	font-family: var(--UniNeueHeavy);
 	font-weight: 800;
 	font-size: 22px;
 }
-.header-header__contacts-social img{
-	width: 50px;
-	height: 50px;
+.header-header__contacts-social {
+	display: flex;
+	margin: auto;
 }
 
+
 .header-header__contacts-social a:not(:last-child) {
- margin-right: 10px;
+ margin-right: 8px;
  cursor: pointer;
 }
 .header-header__contacts-social a:hover {
 	transition: all 0.3s;
 	opacity: .5;
 }
+.viber {
+	background-color: #7460f3;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.header-header__contacts-social i{
+	color:  var(--color-white);
+	line-height: 50px;
 
+}
+.massege {
+	background-color: #00a2f2;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.WhatsApp {
+	background-color: #25d266;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
 /*nav-menu*/
 
 .header-header__nav {
@@ -414,23 +448,8 @@ margin-right: 100px;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	background-position: 100% 0%;
-	animation-name: slidemeTwo;
+	animation-name: slideme;
 }
-
-@keyframes slidemeTwo {
-	0% {
-	  left: -30px;
-	  margin-left: 0px;
-	}
-	30% {
-	  left: 110%;
-	  margin-left: 20px;
-	}
-	100% {
-	  left: 110%;
-	  margin-left: 20px;
-	}
-  }
 
 .bullet__under-btn:hover {
 	transition: all 0.3s;
@@ -443,17 +462,13 @@ margin-right: 100px;
 	font-family: var(--UniNeueBold);
 	font-size: 17px;
 	font-weight: 700;
-	background-color: transparent;
-	
+	background-color: transparent;	
 }
-
-
 
 .btn-icon {
 	margin-right: 12px;
 	margin-left: 6px;
 }
-
 
 .slider {
 	display: flex;
@@ -497,4 +512,60 @@ svg {
 .next:hover {
 	transition: all 0.3s;
 	opacity: .5;
+}
+
+@media (min-width:1200px) and (max-width:1366px) {
+	  
+html {
+	font-size: 10px;
+}
+body {
+	font-size: 16px;
+}
+	section {
+		width: 100%;
+		max-width: 136.6rem;
+		margin: auto;
+	}
+	.header {
+		max-width: 120.0rem;
+		
+	}
+	.header-header {
+		margin-bottom: 4.4rem;
+	}
+	.header-header__title {
+		width: 32.1rem;
+    font-family: var(--UniNeueBook);
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-align: start;
+    margin-right: 10.0rem;
+}
+  .header-header__local {
+	margin-right: 5.0rem;
+	width: 24.0rem;
+  }
+.header-header__btn {
+	padding: 1.2rem 3.1rem;
+	font-size: 1.6rem;
+	margin-right: 8.0rem;
+}
+
+
+
+
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+
+}
+@media (min-width:769px) and (max-width:1024px) {
+
+}
+@media (min-width:481px) and (max-width:769px) {
+
+}
+@media (min-width:320px) and (max-width:481px) {
+
 }
