@@ -486,9 +486,13 @@ margin-right: 100px;
 
 }
 .slider__img{
+	display: inline-block;
 	margin-right: 11px;
+	transition: 1s;
 }
-
+.slider__img:hover{
+	transform: scale(1.5);
+}
 svg {
 	width: 21px;
 	position: absolute;

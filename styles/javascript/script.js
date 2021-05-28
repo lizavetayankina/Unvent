@@ -9,7 +9,17 @@ const prevString = document.querySelector('.prev');
 const nextString = document.querySelector('.next');
 const slideIimg = document.querySelectorAll('.slider__img');
 
-let currentIndexImg = 0;
+
+
+
+
+
+
+
+
+
+
+/*let currentIndexImg = 0;
 slideIimg.src = imgItem[currentIndexImg];
 prevString.disabled = true;
 
@@ -32,4 +42,4 @@ prevString.disabled = true;
         
     }
     slideIimg.src = imgItem[currentIndexImg];
-})
+})*/
