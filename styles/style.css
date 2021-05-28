@@ -361,8 +361,8 @@ margin-right: 100px;
 	margin-right: 0;
 }
 .bullet__item span {
-font-family: var(--UniNeueBold);
-font-weight: 700;
+   font-family: var(--UniNeueBold);
+   font-weight: 700;
 }
 
 .bullet__under {
@@ -393,9 +393,45 @@ font-weight: 700;
 	padding: 32px 40px;
 	background-color: #fe6250;
 	border-radius: 5px;	
-box-shadow: 0px 19px 49px 0px rgba(254, 88, 81, 0.1),0px 4px 0px 0px rgba(230, 60, 60, 0.004);	  
-cursor: pointer;
+    box-shadow: 0px 19px 49px 0px rgba(254, 88, 81, 0.1),0px 4px 0px 0px rgba(230, 60, 60, 0.004);	  
+    cursor: pointer;
+	position: relative;
+	overflow-x: hidden;
 }
+.bullet__under-btn::after {
+	content: "";
+	position: absolute; 
+	top: 0; 
+	left: -2em;
+	width: 30px;
+	height: 100%;
+	z-index: 1;
+	background: linear-gradient(to left, rgba(255,255,255,.0), rgba(255,255,255,.8), rgba(255,255,255,.0)) no-repeat -2em 0%;
+	transform: skewX(-50deg);
+	transition: all 0.3s;
+	animation-duration: 3s;
+	animation-delay: 0.01s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	background-position: 100% 0%;
+	animation-name: slidemeTwo;
+}
+
+@keyframes slidemeTwo {
+	0% {
+	  left: -30px;
+	  margin-left: 0px;
+	}
+	30% {
+	  left: 110%;
+	  margin-left: 20px;
+	}
+	100% {
+	  left: 110%;
+	  margin-left: 20px;
+	}
+  }
+
 .bullet__under-btn:hover {
 	transition: all 0.3s;
 	opacity: .5;
@@ -410,6 +446,8 @@ cursor: pointer;
 	background-color: transparent;
 	
 }
+
+
 
 .btn-icon {
 	margin-right: 12px;
