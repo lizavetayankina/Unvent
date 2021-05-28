@@ -112,18 +112,22 @@
 section {
 	width: 100%;
 	width: 1920px;
+	background-image: url('/img/Форма-.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .container {
-	max-width: 1570px;
-	padding-top: 46px;
-	padding-bottom: 127px;
+	max-width: 1720px;
+
 }
 
 /*Header*/
 .header {
-	max-width: 1570px;
+	max-width: 1720px;
     text-align: center;
-    margin: 41px auto;
+    margin: auto;
+	padding: 46px 75px;
 
 }
 .header-header {
@@ -153,11 +157,14 @@ margin-right: 91px;
 	font-size: 18px;
 	
 }
+.header-header__title span {
+	font-family: var(--UniNeueHeavy);
+}
 .header-header__local {
     width: 240px;
 	display: flex;
 	text-align: start;
-    margin-right: 109px;
+    margin-right: 108px;
 	
 }
 .local {
@@ -191,7 +198,8 @@ margin-right: 91px;
 	font-weight: 800;
 }
 .header-header__btn {
-	padding: 28px 38px; 
+	padding: 12px 31px;
+	height: 69px;
 	border-radius: 8px;
 	border: none;
 	background-color: #313d4b;
@@ -281,10 +289,7 @@ margin-right: 91px;
 	display: flex;
 	width: 1570px;
 	margin: auto;
-	background-image: url('/img/Форма-.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	
 	
 }
 
